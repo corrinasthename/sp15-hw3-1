@@ -1,0 +1,21 @@
+<h1>Users, Cats, and Todos</h1>
+<img src = "https://en.opensuse.org/images/0/0b/Icon-user.png", width = "90">
+<img src = "http://www.pageresource.com/wallpapers/wallpaper/youwall-laughing-cat-free_163632.jpg", width = "150">
+<img src = "http://www.exceltoxl.com/media/blogs/learnexcelonline/July/to-do-list1.jpg?mtime=1405874528", width = "90">
+
+<% @users.each do |u| %>
+	<font color = "blue"><p> Username: <%= u.username %> </p>
+	<p> Email: <%= u.email %></p>
+	<p> Age: <%= u.age %> </p></font>
+<% end %>
+
+<% @cats.each do |x| %>
+	<font color = "green">
+	<p> Name: <%= x.name %> </p> </font>
+<% end %>
+
+<% @todos.each do |y| %>
+	<font color = "purple">
+	<p> Task: <%= y.tasks %> </p>
+	<p> Finished?: <%= y.finished %></p></font>
+<% end %>
